@@ -5,8 +5,8 @@ layout: default
 
   {% if page.banner_image %}
   <div class="banner-image">
-    <img 
-        src="{{ "/assets/images/" | append: page.banner_image | prepend: site.baseurl | prepend: site.url }}" 
+    <img
+        src="{{ "/assets/images/" | append: page.banner_image | prepend: site.baseurl | prepend: site.url }}"
         alt="{{ page.banner_image_alt }}">
   </div>
   {% endif %}
@@ -18,21 +18,48 @@ layout: default
   {% endif %}
 
   <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
+    <h2 class="post-title">{{ page.title }}</h2>
     <p class="post-meta">
-    {% if (page.categories.size > 0 %}
-      <span class="categories">
-      {{ page.categories | array_to_sentence_string }}
-      </span> |
+    {% if page.type == "Research Paper" %}
+      <span class="">
+          {% if page.authors %}  Authors : {{ page.authors  | array_to_sentence_string }}{% endif %}
+          {% if page.date %} <br /> Publication Date : {{ page.date | date: "%b %-d, %Y" }} {% endif %}
+          {% if page.tags %} <br /> Tags : {{page.tags}} {% endif %}
+          {% if page.meta %} <br /> {{ page.meta }}{% endif %}
+          {% if page.conference %} <br /> Conference : {{ page.conference }}{% endif %}
+      </span>
+      <span class="external-link">
+          {% if page.download %} <br /> <b><a href={{page.download}}> Access Research Paper </a> </b> {% endif %}
+      </span>
     {% endif %}
+
+    {% if page.type == "Blog" %}
+      <span class="categories">
+          {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
+          </span>
+      </span>
+    {% endif %}
+
+    {% if page.type == "Patent" %}
     <span class="post-date">
-    {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}  
+        {% if page.inventors %} Inventors : {{ page.inventors  | array_to_sentence_string }} {% endif %}
+        {% if page.grant-date %} <br /> <b>Status : Granted • Grant Date : {{ page.grant-date | date: "%b %-d, %Y" }} </b>{% endif %}
+        {% if page.publication-number %} <br /> <b>Publication Number : {{ page.publication-number }} </b>{% endif %}
+        {% if page.application-date %} <br /> <b>Status : Application • Date of Filing : {{ page.application-date | date: "%b %-d, %Y" }} </b>{% endif %}
+        {% if page.application-number %} <br /> <b>Application Number : {{ page.application-number | date: "%b %-d, %Y" }} </b>{% endif %}
+        {% if page.tags %} <br /> Tags : {{page.tags}} {% endif %}
     </span>
+    <span class="external-link">
+        {% if page.download %} <br /> <b><a href={{page.download}}> Access Patent Document </a> </b> {% endif %}
+        {% if page.related-paper %} • <b><a href="/{{page.related-paper}}"> Access Related Research Paper </a></b> {% endif %}
+    </span>
+    {% endif %}
+
     </p>
   </header>
 
   <article class="post-content">
-    {{ content }}    
+    {{ content }}
   </article>
 
   {% if site.related_posts %}
@@ -57,12 +84,12 @@ layout: default
     {% if site.theme.show_author_info %}
       {% include author.html %}
     {% endif %}
-  
+
     {% if site.theme.show_share_buttons %}
       {% include share-buttons.html %}
-    {% endif %}  
+    {% endif %}
   </div>
-  
+
   {% if page.comments %}
     <div class="comments">
         <a href="javascript:;" class="load-view">View Comments...</a>

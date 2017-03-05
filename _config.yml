@@ -1,27 +1,26 @@
 # Site settings
-title: Your awesome title
-tagline: And Tagline
-email: gayanvirajith@gmail.com
+title: Anil Vishnoi
+tagline: Computer Engineer, Open Source Enthusiast, Photographer
+email: vishnoianil@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Hi, I’m a professional UI/UX designer and web developer. 
-  I love being minimal and creative.
-baseurl: "/gaya" # the subpath of your site, e.g. /blog/
-url: "http://gayan.me" # the base hostname & protocol for your site
+  Computer engineer working in the domain of disruptive networking technologies.
+baseurl: "/avishnoi.github.io" # the subpath of your site, e.g. /blog/
+url: "http://127.0.0.1:4000" # the base hostname & protocol for your site
 logourl: /assets/images/logo.png # Site logo
-author: "Tom Warlker"
-author_thumbnail: "/assets/images/avatar.jpg" # Author avatar
+author: "Anil Vishnoi"
+author_thumbnail: "/assets/images/avatar-1.jpg" # Author avatar
 # Theme customization - please change from the defaults!
 theme:
   # Color for sidebar bar, links, etc
   highlight_color: "#205081" #205081" # "#272935"
   # Social media links, leave blank to ignore
-  social: 
-    github: gayanvirajith
-    twitter: gayanvirajith
-    facebook: gayanvirajith
-    gplus: +gayanvirajith
-    # dribble: gayanvirajith
-    pinterest: gayanvirajith
+  social:
+    github: vishnoianil
+    twitter: vishnoianil_
+    facebook: vishnoianil
+    gplus: +vishnoianil
+    dribble:
+    pinterest:
 
   # Enable share buttons on post footer
   show_share_buttons: true
@@ -30,12 +29,27 @@ theme:
   show_author_info: true
 
   # Disqus comments manager - shortname
-  # disqus_shortname: gaya-webcreate
+  disqus_shortname: vishnoianil
 
   # Google Analytics/Webmaster key, leave blank to ignore
-  google_analytics_key: 
-  google_webmaster_key: 
+  google_analytics_key:
+  google_webmaster_key:
 
+footer-links:
+  dribbble:
+  email: dmm@1-4-5.net
+  facebook: dmm613
+  flickr:
+  github: davidmeyer
+  instagram:
+  linkedin: davidmeyer4
+  pinterest:
+  rss: # just type anything here for a working RSS icon
+  twitter: dmm613
+  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  youtube: # channel/<your_long_string> or user/<user-name>
+  googleplus: # anything in your pr
+      
 # Build settings
 markdown: kramdown
 
@@ -46,7 +60,7 @@ permalink:        pretty
 paginate: 5
 
 # Files/Folders to be excluded from generated _site folder
-exclude: 
+exclude:
   - CNAME
   - Gemfile
   - Rakefile

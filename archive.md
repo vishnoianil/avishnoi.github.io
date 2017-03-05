@@ -1,11 +1,14 @@
 ---
 layout: page
-title: Blog Archive
+title:
 permalink: /archive/
-banner_image: sample-banner-image-3.jpg
 ---
 
 <div>
+  <article class="post">
+    <h2 class="post-title" style="text-align: center;color:#1a426d"> <b>Archived Posts</b> </h2>
+  </article>
+
   {% for post in site.posts %}
     {% capture currentyear %}{{post.date | date: "%Y"}}{% endcapture %}
     {% if currentyear != year %}
@@ -14,8 +17,7 @@ banner_image: sample-banner-image-3.jpg
       {% endunless %}
       <h5>{{ currentyear }}</h5>
       <ul>
-      {% capture year %}{{currentyear}}{% endcapture %} 
+      {% capture year %}{{currentyear}}{% endcapture %}
     {% endif %}
-    <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
-{% endfor %}
-</div>
+    <li><b>[{{post.type}}] </b><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+  {% endfor %}

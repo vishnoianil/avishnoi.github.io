@@ -1,4 +1,12 @@
 - title: "About me" # Title/Caption of the menu item
-  href: "/about" # the page where it pointed 
-- title: "Blog Archive"
+  href: "/about" # the page where it pointed
+- title: "Archive"
   href: "/archive"
+- title: "Talks"
+  href: "/talks"
+- title: "Research Papers"
+  href: "/papers"
+- title: "Patents"
+  href: "/patents"
+- title: "Photography"
+  href: "/photography"

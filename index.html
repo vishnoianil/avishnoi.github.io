@@ -4,7 +4,7 @@ layout: default
 
 <div class="posts">
   {% for post in paginator.posts %}
-  {% assign post_url = post.url | append: '/' | replace: '//', '/' | prepend: site.baseurl | prepend: site.url | %}
+  {% assign post_url = post.url | replace: '//', '/' | prepend: site.baseurl | prepend: site.url | %}
   <article class="post">
 
     {% if post.banner_image %}
@@ -19,7 +19,7 @@ layout: default
     {% endif %}
 
     <h2 class="post-title">
-      <a href="{{ post.url | append: '/' | replace: '//', '/' | prepend: site.baseurl | prepend: site.url  }}">
+      <a href="{{ post.url | replace: '//', '/' | prepend: site.baseurl | prepend: site.url  }}">
         {{ post.title }}
       </a>
     </h2>
@@ -34,7 +34,7 @@ layout: default
     </p>
 
     {{ post.excerpt }}
-    <a href="{{ post.url | append: '/' | replace: '//', '/' | prepend: site.baseurl | prepend: site.url  }}">
+    <a href="{{ post.url | replace: '//', '/' | prepend: site.baseurl | prepend: site.url  }}">
       Continue reading »
     </a>
   </article>
@@ -61,7 +61,7 @@ layout: default
 
 <script type="application/ld+json">
 {
-    "@context": "http://schema.org",
+    "@context": "https://schema.org",
     "@type": "WebSite",
     "url": "{{ '' | prepend: site.baseurl | prepend: site.url | append: '/' }}"
     }

@@ -9,11 +9,11 @@ permalink: /papers/
   </article>
 
   {% for paper in site.categories.papers %}
-  {% assign post_url = paper.url | append: '/' | replace: '//', '/' | prepend: site.baseurl | prepend: site.url %}
+  {% assign post_url = paper.url | replace: '//', '/' | prepend: site.baseurl | prepend: site.url %}
 
   <article class="post">
     <h2 class="post-title">
-      <a href="{{ paper.url | append: '/' | replace: '//', '/' | prepend: site.baseurl | prepend: site.url }}">
+      <a href="{{ paper.url | replace: '//', '/' | prepend: site.baseurl | prepend: site.url }}">
         {{ paper.title }}
       </a>
     </h2>
@@ -27,7 +27,7 @@ permalink: /papers/
     </p>
 
     {{ paper.excerpt }}
-    <a href="{{ paper.url | append: '/' | replace: '//', '/' | prepend: site.baseurl | prepend: site.url }}">
+    <a href="{{ paper.url | replace: '//', '/' | prepend: site.baseurl | prepend: site.url }}">
       Continue reading »
     </a>
   </article>

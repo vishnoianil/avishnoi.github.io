@@ -9,11 +9,11 @@ permalink: /patents/
   </article>
 
   {% for patent in site.categories.patents %}
-  {% assign post_url = patent.url | append: '/' | replace: '//', '/' | prepend: site.baseurl | prepend: site.url %}
+  {% assign post_url = patent.url | replace: '//', '/' | prepend: site.baseurl | prepend: site.url %}
 
   <article class="post">
     <h1 class="post-title">
-      <a href="{{ patent.url | append: '/' | replace: '//', '/' | prepend: site.baseurl | prepend: site.url }}">
+      <a href="{{ patent.url | replace: '//', '/' | prepend: site.baseurl | prepend: site.url }}">
         {{ patent.title }}
       </a>
     </h1>
@@ -26,7 +26,7 @@ permalink: /patents/
     </p>
 
     {{ patent.excerpt }}
-    <a href="{{ patent.url | append: '/' | replace: '//', '/' | prepend: site.baseurl | prepend: site.url }}">
+    <a href="{{ patent.url | replace: '//', '/' | prepend: site.baseurl | prepend: site.url }}">
       Continue reading »
     </a>
   </article>

@@ -9,29 +9,29 @@ url: "https://vishnoianil.github.io" # the base hostname & protocol for your sit
 logourl: /assets/images/logo.png # Site logo
 author: "Anil Vishnoi"
 author_thumbnail: "/assets/images/avatar-1.jpg" # Author avatar
+
+# Enable share buttons on post footer
+show_share_buttons: true
+
+# Show author picure, name and social links on post footer
+show_author_info: true
+
+# Disqus comments manager - shortname
+disqus_shortname: vishnoianil
+
 # Theme customization - please change from the defaults!
-theme:
+github_username: vishnoianil
+twitter_username: vishnoianil_
+facebook_username: vishnoianil
+gplus_username: +vishnoianil
+#dribble_username:
+#pinterest_username:
+
   # Color for sidebar bar, links, etc
-  highlight_color: "#205081" #205081" # "#272935"
-  # Social media links, leave blank to ignore
-  social:
-    github: vishnoianil
-    twitter: vishnoianil_
-    facebook: vishnoianil
-    gplus: +vishnoianil
-
-  # Enable share buttons on post footer
-  show_share_buttons: true
-
-  # Show author picure, name and social links on post footer
-  show_author_info: true
-
-  # Disqus comments manager - shortname
-  disqus_shortname: vishnoianil
-
-  # Google Analytics/Webmaster key, leave blank to ignore
-  google_analytics_key:
-  google_webmaster_key:
+highlight_color: "#205081" #205081" # "#272935"
+# Google Analytics/Webmaster key, leave blank to ignore
+google_analytics_key:
+google_webmaster_key:
 
 # Build settings
 markdown: kramdown

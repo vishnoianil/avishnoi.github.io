@@ -81,11 +81,11 @@ layout: default
   {% endif %}
 
   <div class="author-info">
+    {% if site.show_author_info %}
       {% include author.html %}
-    {% if site.theme.show_author_info %}
     {% endif %}
 
-    {% if site.theme.show_share_buttons %}
+    {% if site.show_share_buttons %}
       {% include share-buttons.html %}
     {% endif %}
   </div>

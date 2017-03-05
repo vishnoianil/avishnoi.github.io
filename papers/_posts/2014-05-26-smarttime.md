@@ -4,7 +4,7 @@ title: "Effective switch memory management in OpenFlow networks"
 date: "2014-05-26"
 tags: "SDN, Resource-Optimization, OpenFlow, TCAM"
 comments: true
-permalink: 2014/05/effective-switch-memory-management-in-OpenFlow-networks
+permalink: 2014/05/smarttime
 download: http://researcher.watson.ibm.com/researcher/files/in-rishpodd/SmartTime.pdf
 authors:
 - Anilkumar Vishnoi

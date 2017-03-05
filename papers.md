@@ -13,7 +13,7 @@ permalink: /papers/
 
   <article class="post">
     <h2 class="post-title">
-      <a href="{{ paper.url | replace: '//', '/' | prepend: site.baseurl | prepend: site.url }}">
+      <a href="{{ paper.url | replace: '//', '/' | prepend: site.baseurl | prepend: site.url}}#disqus_thread">
         {{ paper.title }}
       </a>
     </h2>

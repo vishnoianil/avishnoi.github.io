@@ -13,7 +13,7 @@ permalink: /patents/
 
   <article class="post">
     <h1 class="post-title">
-      <a href="{{ patent.url | replace: '//', '/' | prepend: site.baseurl | prepend: site.url }}">
+      <a href="{{ patent.url | replace: '//', '/' | prepend: site.baseurl | prepend: site.url}}#disqus_thread">
         {{ patent.title }}
       </a>
     </h1>

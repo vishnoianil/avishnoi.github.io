@@ -4,8 +4,8 @@ tagline: Computer Engineer, Open Source Enthusiast, Photographer
 email: vishnoianil@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Computer engineer working in the domain of disruptive networking technologies.
-baseurl: "/avishnoi.github.io" # the subpath of your site, e.g. /blog/
-url: "http://127.0.0.1:4000" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://vishnoianil.github.io" # the base hostname & protocol for your site
 logourl: /assets/images/logo.png # Site logo
 author: "Anil Vishnoi"
 author_thumbnail: "/assets/images/avatar-1.jpg" # Author avatar
@@ -35,21 +35,6 @@ theme:
   google_analytics_key:
   google_webmaster_key:
 
-footer-links:
-  dribbble:
-  email: dmm@1-4-5.net
-  facebook: dmm613
-  flickr:
-  github: davidmeyer
-  instagram:
-  linkedin: davidmeyer4
-  pinterest:
-  rss: # just type anything here for a working RSS icon
-  twitter: dmm613
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your pr
-      
 # Build settings
 markdown: kramdown
 

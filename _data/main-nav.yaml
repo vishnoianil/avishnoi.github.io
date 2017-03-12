@@ -2,6 +2,8 @@
   href: "/about" # the page where it pointed
 - title: "Archive"
   href: "/archive"
+- title: "Blog"
+  href: "/blog"
 - title: "Talks"
   href: "/talks"
 - title: "Research Papers"
